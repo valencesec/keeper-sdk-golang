@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/keeper-security/keeper-sdk-golang/api"
 	"github.com/keeper-security/keeper-sdk-golang/auth"
-	"github.com/keeper-security/keeper-sdk-golang/internal/proto_enterprise"
+	"github.com/keeper-security/keeper-sdk-golang/proto_enterprise"
 	"github.com/keeper-security/keeper-sdk-golang/storage"
 	"go.uber.org/zap"
 )

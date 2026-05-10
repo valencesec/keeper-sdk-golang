@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"github.com/keeper-security/keeper-sdk-golang/api"
 	"github.com/keeper-security/keeper-sdk-golang/internal/json_commands"
-	"github.com/keeper-security/keeper-sdk-golang/internal/proto_account_summary"
+	"github.com/keeper-security/keeper-sdk-golang/proto_account_summary"
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"

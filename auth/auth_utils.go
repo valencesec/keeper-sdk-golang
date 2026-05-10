@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/keeper-security/keeper-sdk-golang/api"
 	"github.com/keeper-security/keeper-sdk-golang/internal/json_commands"
-	"github.com/keeper-security/keeper-sdk-golang/internal/proto_auth"
+	"github.com/keeper-security/keeper-sdk-golang/proto_auth"
 )
 
 type PublicKeys struct {

@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"github.com/keeper-security/keeper-sdk-golang/api"
 	"github.com/keeper-security/keeper-sdk-golang/internal/database"
-	"github.com/keeper-security/keeper-sdk-golang/internal/proto_auth"
+	"github.com/keeper-security/keeper-sdk-golang/proto_auth"
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 	"net/url"

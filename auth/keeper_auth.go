@@ -4,7 +4,7 @@ import (
 	"crypto/ecdh"
 	"crypto/rsa"
 	"github.com/keeper-security/keeper-sdk-golang/api"
-	"github.com/keeper-security/keeper-sdk-golang/internal/proto_account_summary"
+	"github.com/keeper-security/keeper-sdk-golang/proto_account_summary"
 	"google.golang.org/protobuf/proto"
 	"io"
 )
