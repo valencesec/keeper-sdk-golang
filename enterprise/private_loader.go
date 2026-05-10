@@ -8,7 +8,6 @@ import (
 	"github.com/keeper-security/keeper-sdk-golang/auth"
 	"github.com/keeper-security/keeper-sdk-golang/internal/proto_enterprise"
 	"github.com/keeper-security/keeper-sdk-golang/storage"
-	"github.com/keeper-security/keeper-sdk-golang/vault"
 	"go.uber.org/zap"
 )
 
@@ -127,29 +126,6 @@ func (el *enterpriseLoader) Load() (err error) {
 		}
 
 		el.enterpriseData = newEnterpriseData(ei)
-	}
-
-	if el.enterpriseData.recordTypes == nil {
-		el.enterpriseData.recordTypes = make(enterpriseEntity[vault.IRecordType, string])
-		var rts = storage.NewInMemoryEntityStorage[vault.IStorageRecordType, int64](func(recordType vault.IStorageRecordType) int64 {
-			return recordType.Id()
-		})
-		if err = vault.LoadRecordTypes(el.KeeperAuth(), rts); err == nil {
-			err = rts.GetAll(func(x vault.IStorageRecordType) bool {
-				var rti vault.IRecordType
-				var er1 error
-				if rti, er1 = vault.ParseRecordType(x); er1 == nil {
-					el.enterpriseData.recordTypes[rti.Name()] = rti
-				} else {
-					logger.Debug("parse record type error", zap.Error(er1))
-				}
-				return true
-			})
-		}
-		if err != nil {
-			logger.Warn("enterprise data: load record types", zap.Error(err))
-			err = nil
-		}
 	}
 
 	var treeKey = el.enterpriseData.enterpriseInfo.treeKey

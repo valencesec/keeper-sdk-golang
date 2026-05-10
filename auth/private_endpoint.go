@@ -153,7 +153,7 @@ func (endpoint *keeperEndpoint) CommunicateKeeper(path string, request []byte, s
 	if serverKey < 1 || serverKey > 17 {
 		serverKey = 7
 	}
-	client := http.DefaultClient
+	client := &http.Client{Timeout: 30 * time.Second}
 	for attempt := 0; attempt < 3; attempt++ {
 
 		var apiRequest *proto_auth.ApiRequest

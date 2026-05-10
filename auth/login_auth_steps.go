@@ -284,6 +284,9 @@ func (la *loginAuth) onRequiresAuthHash(response *proto_auth.LoginResponse) (err
 			er1 = la.executeRest("authentication/validate_auth_hash", rq, rs, nil)
 			if er1 == nil {
 				er1 = la.onLoggedIn(rs, func(encryptedDataKey []byte) ([]byte, error) {
+					if len(encryptedDataKey) == 100 {
+						return api.DecryptEncryptionParams(encryptedDataKey, password)
+					}
 					var encryptionKey = api.DeriveKeyHashV2("data_key", password, salt.GetSalt(), uint32(salt.GetIterations()))
 					return api.DecryptAesV2(encryptedDataKey, encryptionKey)
 				})
