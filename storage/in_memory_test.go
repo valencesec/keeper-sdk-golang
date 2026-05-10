@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"github.com/keeper-security/keeper-sdk-golang/api"
+	"github.com/valencesec/keeper-sdk-golang/api"
 	"gotest.tools/assert"
 	"testing"
 	"time"

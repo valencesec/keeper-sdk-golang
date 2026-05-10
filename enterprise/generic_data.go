@@ -1,8 +1,8 @@
 package enterprise
 
 import (
-	"github.com/keeper-security/keeper-sdk-golang/api"
-	"github.com/keeper-security/keeper-sdk-golang/storage"
+	"github.com/valencesec/keeper-sdk-golang/api"
+	"github.com/valencesec/keeper-sdk-golang/storage"
 	"google.golang.org/protobuf/proto"
 )
 

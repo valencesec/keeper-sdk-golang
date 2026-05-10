@@ -7,7 +7,7 @@
 package proto_folder
 
 import (
-	proto_record "github.com/keeper-security/keeper-sdk-golang/internal/proto_record"
+	proto_record "github.com/valencesec/keeper-sdk-golang/internal/proto_record"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

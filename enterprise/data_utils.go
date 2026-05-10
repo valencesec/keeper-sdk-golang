@@ -2,8 +2,8 @@ package enterprise
 
 import (
 	"encoding/json"
-	"github.com/keeper-security/keeper-sdk-golang/api"
-	"github.com/keeper-security/keeper-sdk-golang/internal/database"
+	"github.com/valencesec/keeper-sdk-golang/api"
+	"github.com/valencesec/keeper-sdk-golang/internal/database"
 )
 
 func parseEncryptedData(encryptedData string, treeKey []byte) (result *database.EncryptedData, err error) {

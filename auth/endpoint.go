@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/keeper-security/keeper-sdk-golang/proto_auth"
+	"github.com/valencesec/keeper-sdk-golang/proto_auth"
 )
 
 type IKeeperEndpoint interface {

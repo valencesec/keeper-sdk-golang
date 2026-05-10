@@ -4,9 +4,9 @@ import (
 	"crypto/ecdh"
 	"crypto/rsa"
 	"fmt"
-	"github.com/keeper-security/keeper-sdk-golang/api"
-	"github.com/keeper-security/keeper-sdk-golang/internal/json_commands"
-	"github.com/keeper-security/keeper-sdk-golang/proto_auth"
+	"github.com/valencesec/keeper-sdk-golang/api"
+	"github.com/valencesec/keeper-sdk-golang/internal/json_commands"
+	"github.com/valencesec/keeper-sdk-golang/proto_auth"
 )
 
 type PublicKeys struct {

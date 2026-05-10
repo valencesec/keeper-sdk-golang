@@ -1,4 +1,4 @@
-module github.com/keeper-security/keeper-sdk-golang
+module github.com/valencesec/keeper-sdk-golang
 
 go 1.25.0
 

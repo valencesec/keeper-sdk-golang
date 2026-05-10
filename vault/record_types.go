@@ -1,6 +1,6 @@
 package vault
 
-import "github.com/keeper-security/keeper-sdk-golang/storage"
+import "github.com/valencesec/keeper-sdk-golang/storage"
 
 type RecordTypeScope int32
 
