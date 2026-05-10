@@ -1,9 +1,9 @@
 package enterprise
 
 import (
-	"github.com/valencesec/keeper-sdk-golang/api"
-	"github.com/valencesec/keeper-sdk-golang/auth"
-	"github.com/valencesec/keeper-sdk-golang/internal/json_commands"
+	"github.com/keeper-security/keeper-sdk-golang/api"
+	"github.com/keeper-security/keeper-sdk-golang/auth"
+	"github.com/keeper-security/keeper-sdk-golang/internal/json_commands"
 )
 
 func GetEnterpriseIds(keeperAuth auth.IKeeperAuth, numberRequested int) (eids []int64, err error) {

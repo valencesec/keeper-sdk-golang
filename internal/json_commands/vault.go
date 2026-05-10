@@ -1,7 +1,7 @@
 package json_commands
 
 import (
-	"github.com/valencesec/keeper-sdk-golang/api"
+	"github.com/keeper-security/keeper-sdk-golang/api"
 )
 
 type RecordAddCommand struct {

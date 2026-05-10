@@ -9,7 +9,7 @@ package proto_account_summary
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	proto_auth "github.com/valencesec/keeper-sdk-golang/internal/proto_auth"
+	proto_auth "github.com/keeper-security/keeper-sdk-golang/internal/proto_auth"
 	reflect "reflect"
 	sync "sync"
 )

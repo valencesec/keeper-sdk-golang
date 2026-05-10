@@ -3,7 +3,7 @@ package auth
 import (
 	"bytes"
 	"crypto/ecdh"
-	"github.com/valencesec/keeper-sdk-golang/api"
+	"github.com/keeper-security/keeper-sdk-golang/api"
 	"gotest.tools/assert"
 	"strings"
 	"testing"

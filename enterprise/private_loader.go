@@ -4,10 +4,10 @@ import (
 	"crypto/ecdh"
 	"crypto/rsa"
 	"fmt"
-	"github.com/valencesec/keeper-sdk-golang/api"
-	"github.com/valencesec/keeper-sdk-golang/auth"
-	"github.com/valencesec/keeper-sdk-golang/proto_enterprise"
-	"github.com/valencesec/keeper-sdk-golang/storage"
+	"github.com/keeper-security/keeper-sdk-golang/api"
+	"github.com/keeper-security/keeper-sdk-golang/auth"
+	"github.com/keeper-security/keeper-sdk-golang/proto_enterprise"
+	"github.com/keeper-security/keeper-sdk-golang/storage"
 	"go.uber.org/zap"
 )
 

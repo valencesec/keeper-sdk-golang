@@ -1,8 +1,8 @@
 package enterprise
 
 import (
-	"github.com/valencesec/keeper-sdk-golang/auth"
-	"github.com/valencesec/keeper-sdk-golang/proto_auth"
+	"github.com/keeper-security/keeper-sdk-golang/auth"
+	"github.com/keeper-security/keeper-sdk-golang/proto_auth"
 )
 
 type SecurityReportEntry struct {
