@@ -1,13 +1,13 @@
 module github.com/keeper-security/keeper-sdk-golang
 
-go 1.20
+go 1.25.0
 
 require (
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/mattn/go-sqlite3 v1.14.19
 	go.uber.org/zap v1.26.0
-	golang.org/x/crypto v0.17.0
-	golang.org/x/net v0.19.0
+	golang.org/x/crypto v0.51.0
+	golang.org/x/net v0.55.0
 	google.golang.org/protobuf v1.32.0
 	gotest.tools v2.2.0+incompatible
 )
